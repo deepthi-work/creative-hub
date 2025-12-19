@@ -1,0 +1,24 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+.col-sm{
+  text-align: center;
+}
+
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.grid-img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.list-group-item.active {
+  background-color: #584501;
+  border-color: #1d1d01;
+  color: white;
+  font-weight: 600;
+}

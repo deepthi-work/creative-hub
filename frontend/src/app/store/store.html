@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="col-md-3 col-lg-2 sidebar p-3 border-end">
+      <h4 class="mb-4">Categories</h4>
+
+      <ul class="list-group">
+        <li *ngFor="let category of categories" class="list-group-item" [class.active]="selectedCategory === category"
+          (click)="filterByCategory(category)" style="cursor: pointer;">
+          {{ category }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="col-md-9 col-lg-10 p-3">
+
+      <!-- TOP BAR: FILTER & SORT -->
+      <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+
+        <h4 class="mb-2">Products</h4>
+
+        <div class="d-flex gap-2">
+          <select class="form-select" [(ngModel)]="sortOption" (change)="sortImages()">
+            <option value="default">Sort By</option>
+            <option value="asc">Name (A → Z)</option>
+            <option value="desc">Name (Z → A)</option>
+          </select>         
+        </div>
+
+      </div>
+
+      <!-- RESPONSIVE IMAGE GRID -->
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3" *ngFor="let img of filteredImages">
+          <div class="card shadow-sm">
+            <img [src]="imageFolderPath + img.name" class="card-img-top grid-img" alt="" />
+
+            <div class="card-body p-2">
+              <p class="card-text text-center small mb-0">
+                {{ img.name }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
