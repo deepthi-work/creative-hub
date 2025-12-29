@@ -1,0 +1,85 @@
+[
+  {
+    "id": "p1",
+    "name": "Clay House",
+    "price": 2499,
+    "description": "A clay house model made by hand",
+    "images": [
+      "/clay/clay house thumbnail.jpg",
+      "/clay/clay house 1.jpg",
+      "/clay/clay house 2.jpg",
+      "/clay/clay house 3.jpg"
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Crochet",
+    "price": 3999,
+    "description": "A crochet bag made by hand",
+    "images": [
+      "/crochet/crochet thumbnail.jpg",
+      "/crochet/crochet 1.jpg",
+      "/crochet/crochet 2.jpg",
+      "/crochet/crochet 3.jpg"
+    ]
+  },
+    {
+    "id": "p3",
+    "name": "Glass Painting",
+    "price": 3999,
+    "description": "A glass painting made by hand",
+    "images": [
+      "/glass painting/glass painting thumbnail.jpg",
+      "/glass painting/glass painting 1.jpg",
+      "/glass painting/glass painting 2.jpg"
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Jharokha Frame",
+    "price": 3999,
+    "description": "A jharokha frame made by hand",
+    "images": [
+      "/jharokha/jharokha thumbnail.jpg",
+      "/jharokha/jharokha 1.jpg",
+      "/jharokha/jharokha 2.jpg"
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Lippan Art",
+    "price": 3999,
+    "description": "A lippan art made by hand",
+    "images": [
+      "/lippan art/lippan art thumbnail.jpg",
+      "/lippan art/lippan art 1.jpg",
+      "/lippan art/lippan art 2.jpg",
+      "/lippan art/lippan art 3.jpg"
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Canvas Painting",
+    "price": 3999,
+    "description": "A canvas painting made by hand",
+    "images": [
+      "/painting/painting thumbnail.jpg",
+      "/painting/painting 1.jpg",
+      "/painting/painting 2.jpg",
+      "/painting/painting 3.jpg"
+    ]
+  },
+  {
+    "id": "p7",
+    "name": "Resin Art",
+    "price": 3999,
+    "description": "A resin art made by hand",
+    "images": [
+      "/resin/resin art thumbnail.jpg",
+      "/resin/resin art 1.jpg",
+      "/resin/resin art 2.jpg",
+      "/resin/resin art 3.jpg",
+      "/resin/resin art 4.jpg"
+    ]
+  }
+]

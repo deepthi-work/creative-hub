@@ -6,10 +6,12 @@
       <h4 class="mb-4">Categories</h4>
 
       <ul class="list-group">
-        <li *ngFor="let category of categories" class="list-group-item" [class.active]="selectedCategory === category"
-          (click)="filterByCategory(category)" style="cursor: pointer;">
-          {{ category }}
-        </li>
+        @for (category of categories; track category) {
+          <li class="list-group-item" [class.active]="selectedCategory === category"
+            (click)="filterByCategory(category)" style="cursor: pointer;">
+            {{ category }}
+          </li>
+        }
       </ul>
     </div>
 
@@ -33,17 +35,20 @@
 
       <!-- RESPONSIVE IMAGE GRID -->
       <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3" *ngFor="let img of filteredImages">
-          <div class="card shadow-sm">
-            <img [src]="imageFolderPath + img.name" class="card-img-top grid-img" alt="" />
+        @for (product of filteredProducts; track product.id) {
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm">
+              <img [src]="getThumbnail(product)" class="card-img-top grid-img" alt="{{ product.name }}" 
+                   (click)="openProduct(product)" style="cursor: pointer;" />
 
-            <div class="card-body p-2">
-              <p class="card-text text-center small mb-0">
-                {{ img.name }}
-              </p>
+              <div class="card-body p-2">
+                <p class="card-text text-center small mb-0">
+                  {{ product.name }}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        }
       </div>
 
     </div>
